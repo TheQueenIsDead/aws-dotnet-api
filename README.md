@@ -35,3 +35,7 @@ The other thing I would like to do would be automate the DB setup.
 This could be done likely with a simple SQL script on instance startup, as a first
 iterative approach, and then reworked into a separate "more solid" deployment
 means if it grew (Flywheel, redgate, db snapshots etc)
+
+# Have you left these instances running with the passwords available publicly via this repo?
+
+Nope, feel free to try it
