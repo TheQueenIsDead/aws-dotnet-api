@@ -19,7 +19,7 @@ namespace DemoAwsApp.Controllers
            _productService = new ProductService();
         }
         
-        // GET api/product/all
+        // GET api/values
         [HttpGet]
         public ActionResult<Product> Get()
         {

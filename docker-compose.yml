@@ -1,0 +1,18 @@
+
+
+version: '3'
+
+services:
+  
+  app:
+    image: demo:test
+    build:
+      context: DemoAwsApp
+      dockerfile: Dockerfile
+    environment:
+      MYSQL_HOST: "sab2l734awgzte.cgaiypccq3qr.ap-southeast-2.rds.amazonaws.com" 
+      MYSQL_DB: "TestDb"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "abc123demodemo"
+    ports:
+      - 8080:80
