@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using DemoAwsApp.Helpers;
+﻿using DemoAwsApp.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace DemoAwsApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ProductController : ControllerBase
     {
 
         private ProductService _productService;
         
-        public ValuesController()
+        public ProductController()
         {
            _productService = new ProductService();
         }
         
-        // GET api/values
+        // GET api/product
         [HttpGet]
         public ActionResult<Product> Get()
         {
@@ -27,8 +23,6 @@ namespace DemoAwsApp.Controllers
             var results = _productService.GetFirst();
 
             return results;
-            
-//            return results;
         }
         
     }
