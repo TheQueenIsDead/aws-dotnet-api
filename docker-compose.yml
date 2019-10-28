@@ -1,9 +1,5 @@
-
-
 version: '3'
-
-services:
-  
+services:  
   app:
     image: demo:test
     build:
